@@ -99,6 +99,7 @@ int main()
 		//发
 		char strSendBuff[548] = { 0 };
 		//scanf("%s",strSendBuff);scanf无法处理中间有空格的消息
+		//gets升级到2019要变成gets_s
 		gets_s(strSendBuff);
 		//用户如果没有输入信息，直接回车就忽略
 		if (strSendBuff[0] == '\0')
